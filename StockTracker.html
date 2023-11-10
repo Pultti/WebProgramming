@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Investment Portfolio Tracker</title>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="style.css" rel="stylesheet"type="text/css" > -->
+  <link href="StockTracker.css" rel="stylesheet"type="text/css" >
+</head>
+<body>
+
+  <header id="sticky-header">
+    <div id="my-name"><a href="index.html" class="active">Toni Isopoussu portfolio</a></div>
+    <nav>
+        <ul id="project-links">
+          <li><a href="StockTracker.html">Stock tracker</a></li>
+          <li><a href="Testing.html">Test box</a></li>
+          <li><a href="AboutMe.html">About me</a></li>
+            <!-- <li><a href="Tetris.html">Tetris</a></li> -->
+            <!-- <li><a href="AtmSim.html">Tetris</a></li> -->
+            <li><a href="PenTesting.html">Pen Testing</a></li>
+            <li><a href="Game.html">Mini Game</a></li>
+            <!-- <li><a href="NotForEvaluation.html">Testing ground</a></li> -->
+        </ul>
+    </nav>
+    <button id="themeToggle">Change Theme</button>
+  </header>
+  <h1>My Investment Portfolio</h1>
+  <div id="timer">60</div>
+  <header> <h4> Seconds to make life-changing choices, Good or Bad, who knows... </h4>
+    </header>
+
+  <input type="text" id="investmentName" placeholder="Enter investment name">
+  <input type="number" id="investmentAmount" placeholder="Enter stock amount">
+  <button id="addInvestment">Add Investment</button>
+  <div id="portfolio"></div>
+
+
+  <!-- <h1>Simple Stock Tracker</h1>
+  <div id="stockPriceBox">Fetching stock price...</div> -->
+
+  <div id="portfolio"></div>
+
+
+  <input type="text" id="stockSearch" placeholder="Search stock...">
+  <select id="stockSymbol"></select>
+  <button id="fetchPrice">Fetch Price</button>
+  <div id="stockPriceBox"></div>
+
+  <button id="saveInvestments">Save Investments</button>
+  <button id="loadInvestments">Load Investments</button>
+  <button id="clearInvestments">Clear Investments</button>
+
+  <!-- FrontEnd way to do list, using backEnd version on this project
+    
+    <input type="text" id="stockSearch" placeholder="Search stock...">
+ <select id="stockSymbol">
+  <option value="MSFT">Microsoft (MSFT)</option>
+  <option value="AAPL">Apple (AAPL)</option>
+  <option value="GOOGL">Google (GOOGL)</option>
+  <option value="AMZN">Amazon (AMZN)</option>
+  <option value="TSLA">Tesla (TSLA)</option>
+  <option value="FB">Facebook (FB)</option>
+  <option value="NVDA">NVIDIA (NVDA)</option>
+  <option value="NFLX">Netflix (NFLX)</option>
+  <option value="ADBE">Adobe (ADBE)</option>
+  <option value="INTC">Intel (INTC)</option>
+  <option value="CRM">Salesforce (CRM)</option>
+  <option value="CSCO">Cisco Systems (CSCO)</option>
+  <option value="ORCL">Oracle (ORCL)</option>
+  <option value="SAP">SAP (SAP)</option>
+  <option value="SHOP">Shopify (SHOP)</option>
+  <option value="SQ">Square (SQ)</option>
+  <option value="ZM">Zoom (ZM)</option>
+  <option value="UBER">Uber (UBER)</option>
+  <option value="LYFT">Lyft (LYFT)</option>
+  <option value="AMD">Advanced Micro Devices (AMD)</option>
+  <option value="IBM">IBM (IBM)</option>
+  <option value="HPQ">HP Inc. (HPQ)</option>
+  <option value="DELL">Dell Technologies (DELL)</option>
+  <option value="WDAY">Workday (WDAY)</option>
+  <option value="RHT">Red Hat (RHT)</option>
+  <option value="VMW">VMware (VMW)</option>
+  <option value="CTXS">Citrix Systems (CTXS)</option>
+  <option value="ATVI">Activision Blizzard (ATVI)</option>
+  <option value="EA">Electronic Arts (EA)</option>
+  <option value="TTWO">Take-Two Interactive (TTWO)</option>
+  <option value="ZS">Zscaler (ZS)</option>
+  <option value="FTNT">Fortinet (FTNT)</option>
+  <option value="PANW">Palo Alto Networks (PANW)</option>
+  <option value="OKTA">Okta (OKTA)</option>
+  <option value="TEAM">Atlassian Corporation (TEAM)</option>
+  <option value="SPLK">Splunk (SPLK)</option>
+  <option value="NOW">ServiceNow (NOW)</option>
+  <option value="DOCU">DocuSign (DOCU)</option>
+  <option value="TWLO">Twilio (TWLO)</option>
+  <option value="ESTC">Elastic (ESTC)</option>
+
+ </select>
+  <button id="fetchPrice">Fetch Price</button>
+  <div id="stockPriceBox"></div> -->
+
+
+  <script src="javascript/Theme.js" defer></script>
+  <script src="javascript/Stocks.js" defer></script>
+</body>
+</html>

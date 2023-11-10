@@ -1,0 +1,148 @@
+
+/* General styling CSS is in style.css */
+
+h1  {
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Text element styles */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: rgb(225, 216, 223);
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+body {
+  background-image: url('assets/pictures/GameBG.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Optional: Fixes the background image */
+}
+
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+/* Text element styles */
+#message {
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 10%;
+  text-align: center;
+  background-color: rgb(226, 214, 226);
+  color: white;
+}
+
+#quizForm button[type="submit"] {
+  background-color: #008CBA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Game Code */
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  position: relative;
+}
+
+#border, #eye1, #eye2, #happyMouth, #sadMouth {
+  position: absolute;
+  display: none;
+}
+
+#border {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#eye1, #eye2 {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+#eye1 { left: calc(50% - 40px); }
+#eye2 { left: calc(50% + 20px); }
+
+#happyMouth {
+  width: 100px;
+  height: 60px;
+  border-bottom: 20px solid black;
+  border-radius: 0 0 50% 50%;
+  left: 50%;
+  bottom: calc(50% - 60px);
+  transform: translateX(-50%);
+}
+
+#sadMouth {
+  width: 100px;
+  height: 60px;
+  border-top: 10px solid rgb(0, 0, 0);
+  border-bottom: 20px;
+  border-radius: 50% 50% 0 0;
+  left: 50%;
+  bottom: calc(50% - 25%);
+  transform: translateX(-50%);
+}
+
+
+/* Add more CSS for smiley pieces */
+
+
+
+
+@media (max-width: 480px) {
+  h1 {color:rgb(207, 206, 206); }
+  p {color:rgb(207, 206, 206);}
+  body {
+    background-image: none;
+    background: radial-gradient(circle at center, #282727, #474343, #5b5454);
+  }
+  #message{
+    font-size: 12px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {color:rgb(207, 206, 206); }
+  p {color:rgb(207, 206, 206);}
+  body {
+    background-image: none;
+    background: radial-gradient(circle at center, #282727, #474343, #5b5454);
+  }
+  #message{
+    font-size: 12px;
+    width: 15%;
+  }
+}

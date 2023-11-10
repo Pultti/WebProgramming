@@ -1,0 +1,178 @@
+
+/* General styling */
+/* Grouped header styles */
+h1, h2, h3 {
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h4, p {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+
+ul {
+  color: #000000;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Light theme */
+body.light {
+  background: radial-gradient(circle at center, #e9e8e8, #b8b7b7, #878686);
+  color: black;
+  h1, h2, h3, h4, p, ul, li {
+    color: black;
+  }
+}
+
+/* Dark theme */
+body.dark {
+  background: radial-gradient(circle at center, #282727, #474343, #5b5454);
+  color: rgb(0, 0, 0);
+  
+}
+
+
+/* Mobile-first styles, If need for something specific */
+
+
+
+/*Sticky header*/
+
+#sticky-header {
+  position: sticky;
+  width: 99%; /* full width */
+  top: 0;
+  background-color: #333; /* You can change this */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 100; /* to make sure it stays on top */
+}
+
+#my-name a {
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#my-name a:hover {
+  color: purple; /* Hover color when you move your mouse over the link */
+}
+
+#project-links {
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ #project-links li a {
+  color: white;
+  text-decoration: none;
+} 
+
+ /* Hover */
+  #project-links li a:hover {
+    color: purple; /* Hover color when you move your mouse over the link */
+  }
+
+ /* Mobile styles */
+@media (max-width: 360px) {
+  body { font-size: 8px; }
+  #sticky-header { width: 99%; font-size: 8px; }
+  #themeToggle { width: 10%; font-size: 3px; }
+  .modal-content { width: 85%; max-width: 80%; height: 80%;  }
+  #slideshow {
+    height: auto; /* Maintain aspect ratio */
+    height: 160px;
+    max-width: 100%; /* Scale down width to fit screen */
+    margin: auto; /* Centering */
+    display: block; /* Block-level element for centering */
+  }
+  /* ...other styles */
+}
+
+@media (max-width: 480px) {
+  body { font-size: 10px; }
+  #sticky-header { width: 99%; font-size: 10px; }
+  #themeToggle { width: 10%; font-size: 5px; }
+  .modal-content { width: 85%; max-width: 80%; height: 80%;  }
+  #slideshow {
+    height: auto; /* Maintain aspect ratio */
+    height: 160px;
+    max-width: 100%; /* Scale down width to fit screen */
+    margin: auto; /* Centering */
+    display: block; /* Block-level element for centering */
+  }
+  /* ...other styles */
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  body { font-size: 18px; }
+  #sticky-header { width: 99%; font-size: 16px; }
+  #themeToggle { width: 10%; font-size: 14px; }
+  /* ...other styles */
+}
+
+/* Laptop styles */
+@media (min-width: 1024px) {
+  body { font-size: 22px; }
+  #sticky-header { width: 99%; font-size: 18px; }
+  #themeToggle { width: 10%; font-size: 16px; }
+  /* ...other styles */
+}
+
+/* Big screen styles */
+@media (min-width: 1280px) {
+  body { font-size: 24px; }
+  #sticky-header { width: 99%; font-size: 20px; }
+  #themeToggle { width: 10%; font-size: 18px; }
+  /* ...other styles */
+}
+
+/* Bigger screen styles */
+@media (min-width: 1920px) {
+  body { font-size: 34px; }
+  .form-options { font-size: 20px; }
+  /* ...other styles */
+}
+
+/* TV screen styles */
+@media (min-width: 3840px) {
+  body { font-size: 70px; }
+  .form-options { font-size: 40px; }
+  /* ...other styles */
+}

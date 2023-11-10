@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- General Style -->
+        <link href="style.css" rel="stylesheet"type="text/css" >
+        <!-- This page css -->
+       <link href="Testing.css" rel="stylesheet"type="text/css" >
+
+       <title> Testing ground </title>
+    </head>
+
+    <body>
+      <header id="sticky-header">
+        <div id="my-name"><a href="index.html">Toni Isopoussu portfolio</a></div>
+        <nav>
+          <ul id="project-links">
+            <li><a href="StockTracker.html">Stock tracker</a></li>
+            <li><a href="Testing.html">Test box</a></li>
+            <li><a href="AboutMe.html">About me</a></li>
+            <!-- <li><a href="Tetris.html">Tetris</a></li> -->
+            <!-- <li><a href="AtmSim.html">Tetris</a></li> -->
+            <li><a href="PenTesting.html">Pen Testing</a></li>
+            <li><a href="Game.html">Mini Game</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle">Change Theme</button>
+      </header>
+
+      <h1>Note: <br>
+         This page has been developed for testing purposes,<br>
+         so its layout has not been finalised.
+      </h1>
+
+      <h2>Check the time</h2>
+      <button class="time-button" onclick="this.innerHTML=Date()">The time is?</button>
+
+
+
+      <div class="container float">
+        <div class="box float">Box 1</div>
+        <div class="box float">Box 2</div>
+        <div class="box float">Box 3</div>
+        <div class="box float">Box 4</div>
+
+      </div>
+
+      <div class="container grid">
+        <div class="box grid">Box 1</div>
+        <div class="box grid">Box 2</div>
+        <div class="box grid">Box 3</div>
+        <div class="box grid">Box 4</div>
+
+      </div>
+
+      <h2>Advanced JavaScript Error Handling</h2>
+
+      <div class="container">
+        <div id="input-container">
+            <label for="numerator">Numerator:</label>
+            <input type="text" id="numerator">
+            
+            <label for="denominator">Denominator:</label>
+            <input type="text" id="denominator">
+            
+            <button id="calculate">Calculate</button>
+        </div>
+    
+        <p id="result"></p>
+    </div>
+
+
+    <section class="upright-grid">
+      <div class="upright-grid-item">
+        <h3>Virtual Box</h3>
+        <p>Virtual computer inside your computer</p>
+        <div class="hidden-text">
+          <p>    A Virtual Machine is a software-based emulation of a physical computer.<br>
+            It allows you to run multiple operating systems on a single physical machine.<br>
+            VMs are isolated environments, which means they can run different operating systems or configurations without interfering with each other.<br>
+            Common uses of VMs include software testing, development, running legacy applications, and creating isolated environments for security testing and experimentation.<br>
+            Popular VM software includes VMware, VirtualBox, and Hyper-V.</p>
+        </div>
+      </div>
+      <div class="upright-grid-item">
+        <h3>Kali Linux</h3>
+        <p>Linux Distribution for pen. testing</p>
+        <div class="hidden-text">
+          <p>Kali Linux is a specialized Linux distribution designed for penetration testing, ethical hacking, and cybersecurity tasks. <br>
+            It includes a wide range of pre-installed security tools and software for identifying vulnerabilities, testing networks, and performing security assessments. <br>
+            Kali Linux is widely used by cybersecurity professionals, penetration testers, and ethical hackers to assess the security of systems and networks.<br>
+            It provides a powerful and flexible environment for various security-related tasks, such as vulnerability scanning, network sniffing, password cracking, and more.<br>
+            Kali Linux is open-source and is maintained and updated regularly to include the latest security tools and techniques..</p>
+        </div>
+      </div>   
+    </section>
+
+    <div id="quiz-container">
+      <div id="question">What is 2 + 2?</div>
+      <button class="option">3</button>
+      <button class="option">4</button>
+      <button class="option">5</button>
+    </div>
+    <!-- <button id="next-button">Next</button> -->
+    <div id="resultQuiz"></div>
+
+
+
+    <h2>JavaScript For Loop</h2>
+
+      <p id="demo"></p> 
+
+
+      <img id="myImage" src="assets/pictures/virtualMachines.png" alt="VirtualMachines">
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+      
+      
+
+      <footer>
+        <p>Created by Toni Isopoussu</p>
+
+        <script src="javascript/Theme.js" defer></script>
+        <script src="javascript/testing.js" defer></script>
+      </body>
+
+</html>

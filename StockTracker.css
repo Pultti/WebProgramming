@@ -1,0 +1,249 @@
+/* General styling */
+
+header {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#sticky-header {
+  position: sticky;
+  top: 0;
+  width: 99%;
+  padding: 20px;
+  background-color: #333;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+#my-name a {
+
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#my-name a:hover {
+  color: purple;
+}
+
+#project-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+
+
+
+#project-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#project-links li a:hover {
+  color: purple;
+}
+
+
+/* Stock styling */
+
+
+/* Light theme */
+body.light {
+  background: radial-gradient(circle at center, #e9e8e8, #b8b7b7, #878686);
+  color: black;
+}
+
+/* Dark theme */
+body.dark {
+  background: radial-gradient(circle at center, #3b3a3a, #474343, #5b5454);
+  color: rgb(255, 255, 255);
+  h1, h2, h3, h4, p, ul, li {
+    color: rgb(255, 255, 255);
+  }
+}
+
+
+/* Main content */
+h1 {
+  margin-top: 0px;
+  padding: 1em;
+  text-align: center;
+}
+
+
+/* Investment box and controls */
+#portfolio {
+  width: 50%;
+  float: right;
+  padding: 1em;
+}
+
+.investment-box {
+  background-color: #999797;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Inputs and Add Button */
+input[type="text"],
+input[type="number"],
+button#addInvestment {
+  margin: 10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+button#addInvestment {
+  background-color: #333;
+  color: rgb(223, 223, 223);
+  border: none;
+  cursor: pointer;
+}
+
+button#addInvestment:hover {
+  background-color: #555;
+}
+
+/* Delete button in investment box */
+.investment-box button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stock Price Section */
+#stockPriceBox {
+  background-color: #999797;
+  margin: 10px;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+
+
+
+/* Modded 18/10 */
+#stockSearch,
+#stockSymbol,
+#fetchPrice {
+  display: inline-block; 
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+#saveInvestments, #loadInvestments, #clearInvestments {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+
+#timer {
+  font-size: 48px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  border: 3px solid red;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0);
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  body { font-size: 8px; }
+  #sticky-header { width: 99%; font-size: 8px; }
+  #themeToggle { width: 10%; font-size: 3px; }
+  }
+
+
+
+  /* Mobile styles */
+  @media (max-width: 480px) {
+    body { font-size: 10px; }
+    #sticky-header { width: 90%; font-size: 10px; }
+    #themeToggle { width: 10%; font-size: 5px; }
+  #stockPriceBox {
+  
+    width: 50%;
+    
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  body { font-size: 18px; }
+  #sticky-header { width: 90%; font-size: 16px; }
+  #themeToggle { width: 10%; font-size: 14px; }
+  /* ...other styles */
+}
+
+/* Laptop styles */
+@media (min-width: 1024px) {
+  body { font-size: 22px; }
+  #sticky-header { width: 94%; font-size: 18px; }
+  #themeToggle { width: 10%; font-size: 16px; }
+  /* ...other styles */
+}
+
+/* Big screen styles */
+@media (min-width: 1280px) {
+  body { font-size: 24px; }
+  #sticky-header { width: 96%; font-size: 20px; }
+  #themeToggle { width: 10%; font-size: 18px; }
+  /* ...other styles */
+}
+
+/* Bigger screen styles */
+@media (min-width: 1920px) {
+  body {
+    font-size: 38px;
+  }
+}
+
+/* TV screen styles */
+@media (min-width: 3840px) {
+  body {
+    font-size: 70px;
+  }
+}

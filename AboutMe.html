@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- General Style -->
+   <link href="style.css" rel="stylesheet"type="text/css">
+      
+   <!-- This page css -->
+   <link href="AboutMe.css" rel="stylesheet"type="text/css">
+
+   <title> Information about me </title>
+</head>
+
+<body>
+
+  <header id="sticky-header">
+    <div id="my-name"><a href="index.html">Toni Isopoussu portfolio</a></div>
+    <nav>
+      <ul id="project-links">
+        <li><a href="StockTracker.html">Stock tracker</a></li>
+        <li><a href="Testing.html">Test box</a></li>
+        <li><a href="AboutMe.html">About me</a></li>
+        <!-- <li><a href="Tetris.html">Tetris</a></li> -->
+        <!-- <li><a href="AtmSim.html">Tetris</a></li> -->
+        <li><a href="PenTesting.html">Pen Testing</a></li>
+        <li><a href="Game.html">Mini Game</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">Change Theme</button>
+  </header>
+
+<section class="header">
+  <h1>About me:</h1>
+</section>
+
+
+<aside class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li onclick="toggleAdditionalInfo()">Hobbies</li>
+      <li>Objectives</li>
+      <li>Contacts</li>
+      <li>Recommendations</li>
+    </ul>
+  </div>
+
+  <article class="col-6 col-s-9">
+    <h1>Who am I?</h1>
+    <p>Hey there, I'm a guy who's truly passionate about coding and cybersecurity. I find the world of technology endlessly fascinating, and I'm always up for a coding challenge or diving into the realm of cybersecurity to keep things secure.<br><br>
+
+      But that's not all there is to me. I'm also a bit of an adrenaline junkie. You'll often find me at the gym or engaged in various sports and extreme activities. I believe in the balance of mind and body, and that's why I'm all about keeping fit and active. <br><br>
+      
+      Feel free to reach out if you share any of these interests or if you'd like to chat about coding, stocks, or any other exciting topic. I'm always up for a good conversation and love hearing different opinions. Let's connect!</p>
+  </article>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>I'm all about the fascinating world of coding and cybersecurity.</p>
+      
+      <h2>Where?</h2>
+      <p>You'll often find me deep in the trenches, making software as secure as Doomsday Vault.</p>
+      
+      <h2>How?</h2>
+      <p>My mission is to implement code that's not just functional but built on the bedrock of security and best practices.</p>
+    </div>
+  </div>
+</aside>
+
+
+<footer class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</footer>
+
+
+<script src="javascript/Theme.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- General Style -->
+    <link href="style.css" rel="stylesheet"type="text/css" >
+    <!-- This page css -->
+    <link href="game.css" rel="stylesheet" type="text/css">
+
+    <title> Animal Guess Quiz </title>
+  </head>
+
+  <body>
+    <header id="sticky-header">
+      <div id="my-name"><a href="index.html">Toni Isopoussu portfolio</a></div>
+      <nav>
+        <ul id="project-links">
+          <li><a href="StockTracker.html">Stock tracker</a></li>
+          <li><a href="Testing.html">Test box</a></li>
+          <li><a href="AboutMe.html">About me</a></li>
+          <!-- <li><a href="Tetris.html">Tetris</a></li> -->
+          <!-- <li><a href="AtmSim.html">Tetris</a></li> -->
+          <li><a href="PenTesting.html">Pen Testing</a></li>
+          <li><a href="Game.html">Mini Game</a></li>
+        </ul>
+      </nav>
+     
+      <!-- <button id="themeToggle">Change theme</button> -->
+    </header>
+   
+    <h1>Guess the Animal</h1>
+    <p>It's white and it flies.<br>
+      You have 5 guesses, example answer "Polar bear"</p>
+    
+    <form id="quizForm">
+      <input type="text" id="answer" placeholder="Your answer">
+      <button type="submit">Answer</button>
+    </form>
+
+    <div id="message"></div>
+
+    <div id="container">
+      <div id="border"></div>
+      <div id="eye1"></div>
+      <div id="eye2"></div>
+      <div id="happyMouth"></div>
+      <div id="sadMouth"></div>
+    </div>
+
+
+    <script src="javascript/game.js"></script>
+    <!-- <script src="javascript/Theme.js"></script> -->
+  </body>
+</html>
